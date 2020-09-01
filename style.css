@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+}
+
+#cube .front {
+  transform: translateZ(100px);
+}
+
+#cube .back {
+  transform: rotateX(-180deg) translateZ(100px);
+}
+
+#cube .right {
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+#cube .left {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
+#cube .top {
+  transform: rotateX(90deg) translateZ(100px);
+}
+
+#cube .bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+.container {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: 0 auto 40px;
+  /* border: 1px solid #fff; */
+  perspective: 1000px;
+  perspective-origin: 50% 100%;
+}
+
+#cube {
+  width: 100%;
+  height: 100%;
+  top: 100px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 6s;
+}
+
+#cube:hover {
+  cursor: pointer;
+}
+
+#cube div {
+  /* background: hsla(0, 85%, 50%, 0.8); */
+  background: hsla(0, 10%, 71%, 0.877);
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  border: 2px solid black;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 500%;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.dot {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  /* background: #fff; */
+  background: red;
+  border-radius: 15px;
+}
+
+.front .dot1 {
+  top: 85px;
+  left: 85px;
+}
+.back .dot1 {
+  top: 45px;
+  left: 45px;
+}
+.back .dot2 {
+  top: 125px;
+  left: 125px;
+}
+.right .dot1 {
+  top: 45px;
+  left: 45px;
+}
+.right .dot2 {
+  top: 85px;
+  left: 85px;
+}
+.right .dot3 {
+  top: 125px;
+  left: 125px;
+}
+.left .dot1 {
+  top: 45px;
+  left: 45px;
+}
+.left .dot2 {
+  top: 45px;
+  left: 125px;
+}
+.left .dot3 {
+  top: 125px;
+  left: 45px;
+}
+.left .dot4 {
+  top: 125px;
+  left: 125px;
+}
+.top .dot1 {
+  top: 45px;
+  left: 45px;
+}
+.top .dot2 {
+  top: 45px;
+  left: 125px;
+}
+.top .dot3 {
+  top: 85px;
+  left: 85px;
+}
+.top .dot4 {
+  top: 125px;
+  left: 45px;
+}
+.top .dot5 {
+  top: 125px;
+  left: 125px;
+}
+.bottom .dot1 {
+  top: 45px;
+  left: 45px;
+}
+.bottom .dot2 {
+  top: 45px;
+  left: 85px;
+}
+.bottom .dot3 {
+  top: 45px;
+  left: 125px;
+}
+.bottom .dot4 {
+  top: 125px;
+  left: 45px;
+}
+.bottom .dot5 {
+  top: 125px;
+  left: 85px;
+}
+.bottom .dot6 {
+  top: 125px;
+  left: 125px;
+}
+/* =========== */
+/* css btn */
+button {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.button-one {
+  text-align: center;
+  cursor: pointer;
+  font-size: 24px;
+  margin-top: 400px;
+}
+
+/*Button One*/
+.button-one {
+  padding: 20px 60px;
+  outline: none;
+  background-color: #27ae60;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 9px #95a5a6;
+}
+
+.button-one:hover {
+  background-color: #2ecc71;
+}
+
+.button-one:active {
+  background-color: #2ecc71;
+  box-shadow: 0 5px #95a5a6;
+  transform: translateY(4px);
+}
